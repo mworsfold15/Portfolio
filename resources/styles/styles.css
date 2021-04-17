@@ -48,12 +48,13 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: navy;
+    color: #5d63c3;
 }
 
 /* Jumbotron */
 
 #jumbotron {
+    border-radius: 0.25rem;
     height: 30rem;
     width: 100%;
     background-image: url(../images/purple-landscape.jpg);
@@ -62,7 +63,6 @@ header nav li a:hover {
     background-size: cover;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .statement {
@@ -83,7 +83,7 @@ header nav li a:hover {
 .statement p {
     font-size: 1.2rem;
     font-weight: 300;
-    margin: -2.2rem;
+    margin: -2.2rem 0;
     color: white;
     /* padding: -3rem; */
 }
@@ -102,22 +102,56 @@ header nav li a:hover {
     font-size: 1.25rem;
     line-height: 1.5;
     border-radius: .3rem;
-    color: #007bff;
+    color: #FFFFFF;
     display: inline-block;
     font-weight: 500;
     text-align: center;
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #007bff;
+    border: 1px solid #FFFFFF;
     transition: color .15s
 }
 
 .statement button:hover {
-    background-color: #007bff;
+    background-color: #5d63c3;
     color: white;
 }
 /* About */
+
+#about {
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
+}
+
+.about-container  {
+    display: flex;
+    /* width: 100%; */
+}
+
+.about-text-container {
+    display: block;
+}
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-container i {
+    font-size: 2em;
+    width: 2em;
+}
+
+.about-container img {
+    width: 18.75rem;
+    border-radius: 0.4rem;
+}
+
 
 
 
