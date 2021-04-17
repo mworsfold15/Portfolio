@@ -7,9 +7,9 @@ body {
     font-family: Helvetica-neue, sans-serif;
 }
 
-* {
+/* * {
     border: 1px solid midnightblue;
-}
+} */
 
 
 /* Header */
@@ -132,6 +132,10 @@ header nav li a:hover {
     display: block;
 }
 
+#about h2 {
+    text-align: center;
+}
+
 .about-container  {
     margin: 0 auto;
     display: flex;;
@@ -144,7 +148,7 @@ header nav li a:hover {
     margin-right: 3rem;
 }
 
-.about-text-container h2 {
+.about-text-container h3 {
     margin-top: 0;
 }
 
@@ -260,7 +264,23 @@ header nav li a:hover {
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 1058) {
+   #portfolio .website img {
+        border: 1px solid red;
+    }
+}
+
 /* Contact */
+#contact{
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact i {
+    font-size: 2rem;
+}
+
 
 /* Footer */
 
