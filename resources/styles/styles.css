@@ -234,6 +234,7 @@ header nav li a:hover {
     background-color: #F5F5F5;
     padding-top: 25px;
     text-align: center;
+    padding: 2rem;
 }
 
 #portfolio-heading {
@@ -281,6 +282,20 @@ header nav li a:hover {
     font-size: 2rem;
 }
 
+#contact a {
+    font-size: 2rem;
+    color: black;
+}
+
 
 /* Footer */
 
+footer {
+    height: 3.5rem;
+    border-top: 1px solid #5d63c3;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
