@@ -7,9 +7,9 @@ body {
     font-family: Helvetica-neue, sans-serif;
 }
 
-/* * {
+* {
     border: 1px solid midnightblue;
-} */
+}
 
 
 /* Header */
@@ -169,8 +169,6 @@ header nav li a:hover {
 }
 
 
-
-
 @media only screen and (max-width: 1135px){
 
     .about-text-container {
@@ -219,11 +217,48 @@ header nav li a:hover {
     .about-container img {
         width: 100%;
     }
+
+    #about {
+        padding: 0;
+    }
 }
 
 
 /* Portfolio */
 
+#portfolio {
+    background-color: #F5F5F5;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#portfolio-heading {
+    padding: 20px;
+    margin: 0;
+}
+
+.spacer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.website img {
+    height: 300px;
+    width: 500px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.col {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 /* Contact */
 
