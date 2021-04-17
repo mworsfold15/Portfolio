@@ -131,12 +131,27 @@
                 <a href="#"><i class="fab fa-github icon"></i></a>
                 <a href="#"><i class="fas fa-envelope-square icon"></i></a>
               </div>
+
+              <button onclick="darkMode()" class="mode">Dark Mode</button>
         </section>
+
+       
     </main>
     
+
+
     <footer>
-        &copy; Copyright 2021 FastWebApps
+        &copy; Copyright  <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script> FastWebApps
     </footer>
+
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode")
+        }
+    </script>
 </body>
 
 </html>

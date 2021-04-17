@@ -241,24 +241,24 @@ header nav li a:hover {
 #portfolio {
     border-top: 1px solid #5d63c3;
     border-bottom: 1px solid #5d63c3;
-    padding-top: 25px;
+    padding-top: 2.5rem;
     text-align: center;
     padding: 2rem;
 }
 
 #portfolio-heading {
-    padding: 20px;
+    padding: 1.25rem;
     margin: 0;
 }
 
 .spacer {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: auto;
 }
 
 .website img {
-    height: 250px;
-    width: 450px;
+    height: 11rem;
+    width: 24rem;
     border: 1px solid white;
 }
 
@@ -266,7 +266,7 @@ header nav li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .col {
@@ -275,13 +275,18 @@ header nav li a:hover {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 1058) {
+@media only screen and (max-width: 870px) {
    #portfolio .website img {
-        border: 1px solid red;
+        height: 15rem;
+        width: 30rem;
     }
 }
 
 /* Contact */
+
+#contact h2{
+   margin-top: -1rem;
+}
 #contact{
     margin: 2rem;
     padding: 2rem;
@@ -324,7 +329,7 @@ header nav li a:hover {
 /* Footer */
 
 footer {
-    height: 3.5rem;
+    height: 3.125rem;
     border-top: 1px solid #5d63c3;
     text-align: center;
     display: flex;
