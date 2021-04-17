@@ -1,15 +1,15 @@
 /* All */
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-size: 16px;
     font-family: Helvetica-neue, sans-serif;
 }
 
-* {
+/* * {
     border: 1px solid midnightblue;
-}
+} */
 
 
 /* Header */
@@ -49,6 +49,12 @@ header nav li a {
 
 header nav li a:hover {
     color: #5d63c3;
+}
+
+@media only screen and (max-width: 515px){
+    header nav li {
+        padding: 0 0.5rem;
+    }
 }
 
 /* Jumbotron */
@@ -121,18 +127,21 @@ header nav li a:hover {
 
 #about {
     height: auto;
-    margin: 1rem;
+    margin: 2rem auto;
     padding: 1rem;
     display: block;
 }
 
 .about-container  {
-    display: flex;
-    /* width: 100%; */
+    margin: 0 auto;
+    display: flex;;
+    width: 100%;
+    justify-content: center;
 }
 
 .about-text-container {
     display: block;
+    margin-right: 3rem;
 }
 
 .about-text-container h2 {
@@ -142,7 +151,6 @@ header nav li a:hover {
 .skills-container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -151,12 +159,67 @@ header nav li a:hover {
     width: 2em;
 }
 
+
 .about-container img {
-    width: 18.75rem;
+    display: flex;
+    justify-items: flex-end;
+    flex-shrink: 0;
+    width: 30%;
     border-radius: 0.4rem;
 }
 
 
+
+
+@media only screen and (max-width: 1135px){
+
+    .about-text-container {
+        margin-right: 2rem;
+    }
+
+    .about-container img {
+        width: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    .about-text-container {
+        margin-right: 1rem;
+    }
+
+    .about-container img {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    .about-text-container {
+        margin-right: 0.5rem;
+    }
+
+    .about-container img {
+        width: 45%;
+    }
+}
+
+
+@media only screen and (max-width: 760px){
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .about-text-container {
+        margin-right: 0;
+    }
+    
+    .about-container img {
+        width: 100%;
+    }
+}
 
 
 /* Portfolio */
