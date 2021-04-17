@@ -5,6 +5,13 @@ body {
     padding: 0;
     font-size: 16px;
     font-family: Helvetica-neue, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 /* * {
@@ -156,6 +163,7 @@ header nav li a:hover {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    padding-bottom: 1rem;
 }
 
 .skills-container i {
@@ -231,7 +239,8 @@ header nav li a:hover {
 /* Portfolio */
 
 #portfolio {
-    background-color: #F5F5F5;
+    border-top: 1px solid #5d63c3;
+    border-bottom: 1px solid #5d63c3;
     padding-top: 25px;
     text-align: center;
     padding: 2rem;
@@ -248,8 +257,9 @@ header nav li a:hover {
 }
 
 .website img {
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 450px;
+    border: 1px solid white;
 }
 
 .cards {
@@ -287,13 +297,35 @@ header nav li a:hover {
     color: black;
 }
 
+/* Dark mode button */
+
+.mode {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #5d63c3;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #5d63c3;
+    transition: color .15s
+}
+
+.mode:hover {
+    background-color: black;
+}
 
 /* Footer */
 
 footer {
     height: 3.5rem;
     border-top: 1px solid #5d63c3;
-    color: black;
     text-align: center;
     display: flex;
     align-items: center;
