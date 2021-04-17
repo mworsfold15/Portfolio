@@ -7,9 +7,9 @@ body {
     font-family: Helvetica-neue, sans-serif;
 }
 
-/* * {
+* {
     border: 1px solid midnightblue;
-} */
+}
 
 
 /* Header */
@@ -133,6 +133,10 @@ header nav li a:hover {
 
 .about-text-container {
     display: block;
+}
+
+.about-text-container h2 {
+    margin-top: 0;
 }
 
 .skills-container {
